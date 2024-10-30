@@ -1,0 +1,245 @@
+/* Estilos generales */
+body {
+    background-color: #E0E0E0; /* Gris claro */
+    color: #1B3A57; /* Azul marino */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #1B3A57; /* Azul marino */
+    color: white;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #E0E0E0; /* Gris claro */
+    text-decoration: none;
+}
+
+/* Sección de Contacto */
+.contact-section {
+    padding: 20px;
+    background-color: #ffffff; /* Blanco */
+    color: #333;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.contact-section h2 {
+    color: #FF6D00; /* Naranja */
+    margin-top: 0;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+/* Sección de Autenticación */
+.auth-section {
+    padding: 20px;
+    background-color: #ffffff; /* Blanco */
+    color: #333;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.auth-section .form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-form, .register-form {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.login-form:last-child,
+.register-form:last-child {
+    margin-right: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    color: #1B3A57; /* Azul marino */
+}
+
+form input, form textarea, form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #FF6D00; /* Naranja */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #CC5800; /* Naranja oscuro */
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #1B3A57; /* Azul marino */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(11, 24, 203, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #f4f4f9;
+    font-family: 'Georgia', serif;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #E0E0E0; /* Gris claro */
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #FF6D00; /* Naranja */
+    color: #ffffff;
+}
+
+/* Botón especial de "Reservar" */
+.btn-reservar {
+    background-color: #FF6D00; /* Naranja */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-reservar:hover {
+    background-color: #CC5800; /* Naranja oscuro */
+}
+
+/* Sección de servicios */
+.services-section {
+    padding: 50px;
+    background-color: #E0E0E0; /* Gris claro */
+    color: #333;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(34, 81, 108, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    color: #FF6D00; /* Naranja */
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #1B3A57; /* Azul marino */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: #E0E0E0; /* Gris claro */
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #ffffff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-section, .productos, .cursos {
+        padding: 30px 10px;
+    }
+
+    .producto, .curso {
+        width: 100%;
+    }
+}
